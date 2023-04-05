@@ -2,11 +2,14 @@ import "./gallery.css"
 import { Link } from "react-router-dom"
 
 const Gallery = ({crewMembers}) => {
+
+    
+
     return(
         <div className="gallery-page">
             <div className="members-container">
                 {crewMembers && crewMembers.length > 0?
-                    crewMembers.map((member) => {
+                    crewMembers.map((member, index) => {
                         return(
                             <div className="member-card">
                                 <h2>{member.name}</h2>
