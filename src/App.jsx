@@ -1,10 +1,11 @@
 import { useEffect, useState } from 'react'
 import { useRoutes } from 'react-router-dom'
-import Sidebar from "./pages/SideBar.jsx"
+import Sidebar from "./components/SideBar.jsx"
 import Gallery from "./pages/Gallery.jsx"
 import Creation from "./pages/Creation.jsx"
-import Editing from "./pages/Editing.jsx"
+import Editing from "./components/Editing.jsx"
 import Home from './pages/Home.jsx'
+import MemberView from './components/MemberView.jsx'
 import { supabase } from './client.js'
 import './App.css'
 
@@ -46,6 +47,10 @@ function App() {
         {
           path:"/editing/:id",
           element: <Editing crewMembers={crewMembers}/>,
+        },
+        {
+          path:"/member/:id",
+          element: <MemberView crewMembers={crewMembers}/>,
         },
       ]
     },

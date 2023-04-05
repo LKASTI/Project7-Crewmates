@@ -8,7 +8,9 @@
     justify-content: start;
     align-items: center;
 
-    background-color: black;
+    /* background-color: black; */
+    background: url("../assets//millenium-falcon.jpg");
+
 
     flex-grow: 1;
 }
