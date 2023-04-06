@@ -81,8 +81,8 @@ const Editing = ({crewMembers}) => {
                     <label>Role</label><br/>
                     <input id="role" name="role" type="text" value={role} onChange={handleRoleChange}/><br/><br/>
 
-                    <button onClick={deleteMember} className="deleteButton">Delete</button>
                     <input type="submit" value="Submit" />
+                    <button onClick={deleteMember} className="deleteButton">Delete</button>
                 </form>
                 
             }

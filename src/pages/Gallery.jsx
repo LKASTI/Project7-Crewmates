@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 
 const Gallery = ({crewMembers}) => {
 
-    
+
 
     return(
         <div className="gallery-page">
@@ -16,6 +16,7 @@ const Gallery = ({crewMembers}) => {
                                 <p>{member.species}</p>
                                 <p>{member.role}</p>
                                 <Link to={`/editing/${member.id}`}>Edit Crewmember</Link>
+                                <Link to={`/member/${member.id}`}>check this member out</Link>
                             </div>
                         )
                     })
