@@ -30,9 +30,11 @@ const MemberView = ({crewMembers}) => {
                 <div className="member-data">
                     <h2>{member.name}</h2>
                     <p>{member.species}</p>
-                    <p>{member.role}</p>
-                    <p>Is this the kind of crew mate you need?</p>
-                    <Link to={`/editing/${member.id}`}>Edit crew member</Link>
+                    <p>{member.role}</p> <br/><br/>
+                    <p>Is this the kind of crew mate you need?</p><br/>
+                    <div className="edit-link">
+                        <Link to={`/editing/${member.id}`}>Edit Member</Link>
+                    </div>
                 </div>
             }
         </div>

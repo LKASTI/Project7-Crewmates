@@ -1,5 +1,5 @@
 .home-page{
-    height: 100vh;
+    height: max-content;
     width: 100vw;
 
     display: flex;

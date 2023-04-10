@@ -6,7 +6,6 @@ import wookie from "../assets/wookie.webp"
 import human from "../assets/human.png"
 import twilek from "../assets/twilek.jpg"
 import droid from "../assets/Droid.webp"
-import empty from "../assets/x-mark.png"
 
 const Editing = ({crewMembers}) => {
     const {id} = useParams()
